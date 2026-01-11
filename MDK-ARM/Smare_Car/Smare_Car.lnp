@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"smare_car\startup_stm32f103xb.o"
+"smare_car\main.o"
+"smare_car\gpio.o"
+"smare_car\tim.o"
+"smare_car\stm32f1xx_it.o"
+"smare_car\stm32f1xx_hal_msp.o"
+"smare_car\stm32f1xx_hal_gpio_ex.o"
+"smare_car\stm32f1xx_hal_tim.o"
+"smare_car\stm32f1xx_hal_tim_ex.o"
+"smare_car\stm32f1xx_hal.o"
+"smare_car\stm32f1xx_hal_rcc.o"
+"smare_car\stm32f1xx_hal_rcc_ex.o"
+"smare_car\stm32f1xx_hal_gpio.o"
+"smare_car\stm32f1xx_hal_dma.o"
+"smare_car\stm32f1xx_hal_cortex.o"
+"smare_car\stm32f1xx_hal_pwr.o"
+"smare_car\stm32f1xx_hal_flash.o"
+"smare_car\stm32f1xx_hal_flash_ex.o"
+"smare_car\stm32f1xx_hal_exti.o"
+"smare_car\system_stm32f1xx.o"
+--strict --scatter "Smare_Car\Smare_Car.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Smare_Car.map" -o Smare_Car\Smare_Car.axf
